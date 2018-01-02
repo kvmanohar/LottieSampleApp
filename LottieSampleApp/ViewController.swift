@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewForImage: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let animationView = LOTAnimationView(name: "newAnimation")
+        animationView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        animationView.loopAnimation = false
+        animationView.animationSpeed = 0.50
+        
+        animationView.play { (done) in
+            if done {
+                self.viewForImage.isHidden = true
+            }
+        }
+        viewForImage.addSubview(animationView)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 
 }

@@ -12,9 +12,14 @@
 		CED414571FFC24E500F825F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED414551FFC24E500F825F0 /* Main.storyboard */; };
 		CED414591FFC24E500F825F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED414581FFC24E500F825F0 /* Assets.xcassets */; };
 		CED4145C1FFC24E500F825F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4145A1FFC24E500F825F0 /* LaunchScreen.storyboard */; };
+		CED414641FFC289800F825F0 /* newAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = CED414631FFC289800F825F0 /* newAnimation.json */; };
+		E0964643C6182FE7D11BE265 /* Pods_LottieSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50650FDC120F96B4C3D0DF01 /* Pods_LottieSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4255AC98BDFE9FB9EF1C30CB /* Pods-LottieSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LottieSampleApp/Pods-LottieSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		48902F445A77022C3F3AE7FE /* Pods-LottieSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LottieSampleApp/Pods-LottieSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		50650FDC120F96B4C3D0DF01 /* Pods_LottieSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottieSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4144E1FFC24E500F825F0 /* LottieSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED414511FFC24E500F825F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED414531FFC24E500F825F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		CED414581FFC24E500F825F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED4145B1FFC24E500F825F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED4145D1FFC24E500F825F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED414631FFC289800F825F0 /* newAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0964643C6182FE7D11BE265 /* Pods_LottieSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1207838CFFE42708D3FF898E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50650FDC120F96B4C3D0DF01 /* Pods_LottieSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D6C8C9B152EF3BBB48AE033 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48902F445A77022C3F3AE7FE /* Pods-LottieSampleApp.debug.xcconfig */,
+				4255AC98BDFE9FB9EF1C30CB /* Pods-LottieSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CED414451FFC24E500F825F0 = {
 			isa = PBXGroup;
 			children = (
 				CED414501FFC24E500F825F0 /* LottieSampleApp */,
 				CED4144F1FFC24E500F825F0 /* Products */,
+				5D6C8C9B152EF3BBB48AE033 /* Pods */,
+				1207838CFFE42708D3FF898E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		CED414501FFC24E500F825F0 /* LottieSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				CED414651FFC2E8600F825F0 /* LottieImages */,
 				CED414511FFC24E500F825F0 /* AppDelegate.swift */,
 				CED414531FFC24E500F825F0 /* ViewController.swift */,
 				CED414551FFC24E500F825F0 /* Main.storyboard */,
@@ -64,6 +91,14 @@
 			path = LottieSampleApp;
 			sourceTree = "<group>";
 		};
+		CED414651FFC2E8600F825F0 /* LottieImages */ = {
+			isa = PBXGroup;
+			children = (
+				CED414631FFC289800F825F0 /* newAnimation.json */,
+			);
+			path = LottieImages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED414601FFC24E500F825F0 /* Build configuration list for PBXNativeTarget "LottieSampleApp" */;
 			buildPhases = (
+				B3E22FC0FB20A8F5DF5E325B /* [CP] Check Pods Manifest.lock */,
 				CED4144A1FFC24E500F825F0 /* Sources */,
 				CED4144B1FFC24E500F825F0 /* Frameworks */,
 				CED4144C1FFC24E500F825F0 /* Resources */,
+				EC20E76D270271DA8458DE06 /* [CP] Embed Pods Frameworks */,
+				4BCCF789E7CA62817BC9C4B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,10 +164,59 @@
 				CED4145C1FFC24E500F825F0 /* LaunchScreen.storyboard in Resources */,
 				CED414591FFC24E500F825F0 /* Assets.xcassets in Resources */,
 				CED414571FFC24E500F825F0 /* Main.storyboard in Resources */,
+				CED414641FFC289800F825F0 /* newAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BCCF789E7CA62817BC9C4B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottieSampleApp/Pods-LottieSampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E22FC0FB20A8F5DF5E325B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC20E76D270271DA8458DE06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LottieSampleApp/Pods-LottieSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CED4144A1FFC24E500F825F0 /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		CED414611FFC24E500F825F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48902F445A77022C3F3AE7FE /* Pods-LottieSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		CED414621FFC24E500F825F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4255AC98BDFE9FB9EF1C30CB /* Pods-LottieSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
