@@ -18,14 +18,18 @@ class ViewController: UIViewController {
 
         let animationView = LOTAnimationView(name: "newAnimation")
         animationView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        animationView.loopAnimation = false
         animationView.animationSpeed = 0.50
         
-        animationView.play { (done) in
-            if done {
-                self.viewForImage.isHidden = true
-            }
-        }
+        animationView.loopAnimation = true
+        animationView.play()
+        
+//        animationView.loopAnimation = false
+//        animationView.play { (done) in
+//            if done {
+//                self.viewForImage.isHidden = true
+//            }
+//        }
+        
         viewForImage.addSubview(animationView)
         
     }
